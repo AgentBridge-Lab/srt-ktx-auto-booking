@@ -1,6 +1,6 @@
-# Train Booking Share (KTX / SRT)
+# SRT / KTX Auto Booking
 
-민감정보 없이 그대로 공유할 수 있도록 정리한, GitHub 공개용 KTX / SRT 예약 도구 모음입니다.
+민감정보 없이 그대로 공유할 수 있도록 정리한, GitHub 공개용 SRT / KTX 자동 예약 도구 모음입니다.
 
 이 패키지는 다음 목적에 맞춰 구성했습니다.
 - 다른 사람이 GitHub 에서 clone 해서 바로 실행할 수 있게 만들기
