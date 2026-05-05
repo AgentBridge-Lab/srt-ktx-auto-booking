@@ -1,11 +1,17 @@
 # SRT / KTX Auto Booking
 
-민감정보 없이 그대로 공유할 수 있도록 정리한, GitHub 공개용 SRT / KTX 자동 예약 도구 모음입니다.
+이 저장소는 K-Skill 기반 자산을 활용해 정리한, GitHub 공개용 SRT / KTX 자동 예약 도구 모음입니다.
+민감정보 없이 공유할 수 있도록 구성했으며, 다른 사람이 clone 한 뒤 바로 실행·수정·확장하기 쉽게 다듬었습니다.
 
 이 패키지는 다음 목적에 맞춰 구성했습니다.
 - 다른 사람이 GitHub 에서 clone 해서 바로 실행할 수 있게 만들기
-- 계정정보 / 토큰 / 개인 state 파일은 저장소 밖에 두기
-- KTX 는 CLI helper, SRT 는 자동감시 watcher 형태로 재사용하기
+- 계정정보, 토큰, 개인 state 파일은 저장소 밖에서 관리하기
+- K-Skill 기반 흐름을 바탕으로 KTX 는 CLI 도구, SRT 는 자동감시 watcher 형태로 재사용하기
+
+## 기반 및 출처
+
+이 저장소의 KTX / SRT 자동 예약 흐름은 K-Skill 계열 자산을 바탕으로 공개 공유용 형태로 정리한 것입니다.
+필요에 따라 예제, 설명, 실행 구조를 단순화해 바로 재사용할 수 있도록 손봤습니다.
 
 중요한 제한사항
 - 결제 자동화는 포함하지 않습니다.
@@ -16,9 +22,9 @@
 ## 포함 파일
 
 - `scripts/ktx_booking.py`
-  - KTX 조회 / 예약 / 예약조회 / 취소 CLI
+  - KTX 조회, 예약, 예약조회, 취소를 처리하는 CLI 도구
 - `scripts/srt_autobook_watcher.py`
-  - SRT 자동감시 / 자동예약 watcher
+  - SRT 자동감시 및 자동예약을 수행하는 watcher 스크립트
 - `.env.example`
   - 자격정보 예시 파일
 - `requirements.txt`
@@ -51,7 +57,7 @@
 
 ```bash
 git clone <YOUR_REPO_URL>
-cd train-booking-share
+cd srt-ktx-auto-booking
 ```
 
 ### 2) 가상환경 생성
